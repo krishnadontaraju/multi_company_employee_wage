@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class employee_wage_OOP {
 
+
     public static void main(String[] args) {
         // Creating an Instance of class Employee_check
         Employee_check first_emp = new Employee_check();
@@ -18,6 +19,8 @@ public class employee_wage_OOP {
             //Initializing the wage and working hours
             int working_hours = 8;
             int wage_per_hr = 20;
+            //Initializing part time hours
+            int part_time_hrs = 4;
 
         }
 
@@ -37,6 +40,5 @@ public class employee_wage_OOP {
         }
 
     }
-
     
 }
