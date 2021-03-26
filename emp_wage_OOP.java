@@ -4,25 +4,42 @@ public class employee_wage_OOP {
 
     public static void main(String[] args) {
         // Creating an Instance of class Employee_check
-        Employee_check first_emp = new Employee_check();
+        Employee_check first_emp = new Employee_check(20,10,15);
+        Employee_check reliance_emp = new Employee_check(20, 12, 16);
         // Calling the attendance method on first_emp
+        System.out.println("FIRST EMPLOYEE :");
         first_emp.attendance();
+        System.out.println("RELIANCE EMPLOEE:");
+        reliance_emp.attendance();
     }
 
 
 
         public static class Employee_check {
 
-            int working_hours = 8;
-            int work_days = 0; 
-            int absent_counter = 0;
-            int part_time_counter = 0;
-            int full_time_counter = 0;
-            int wage_per_hr = 20;
+            int working_hours;
+            int work_days; 
+            int absent_counter;
+            int part_time_counter;
+            int full_time_counter ;
+            int wage_per_hr ;
             //Initializing part time hours
-            int part_time_hrs = 4;
-            int wage_today = 0;
-            int total_work_hrs = 0;
+            int part_time_hrs ;
+            int wage_today ;
+            int total_work_hrs;
+
+            Employee_check(int a, int b, int c){
+
+                this.working_hours = a;
+                this.work_days = 0;
+                this.absent_counter = 0;
+                this.part_time_counter = 0;
+                this.full_time_counter =0;
+                this.wage_per_hr = c;
+                this.part_time_hrs = b;
+                this.total_work_hrs = 0;
+                this.wage_today = 0;
+            }
                 
             Random check = new Random();
             //Defining attendacne method
@@ -65,7 +82,7 @@ public class employee_wage_OOP {
              System.out.println("THE EMPLOYE WAS ABSENT FOR "+absent_counter+" DAYS");
              System.out.println("THE EMPLOYEE WORKED "+part_time_counter+" PART TIME DAYS");
              System.out.println("THE EMPLOYEE WORKED "+full_time_counter+" FULL TIME DAYS");
-             System.out.println("THE TOTAL WAGE IN THIS MONTH IS "+wage_total);
+             System.out.println("THE TOTAL WAGE IN THIS MONTH IS "+wage_total+"\n");
 
             } 
             
