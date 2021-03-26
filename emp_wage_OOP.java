@@ -6,6 +6,7 @@ public class employee_wage_OOP {
         // Creating an Instance of class Employee_check
         Employee_check first_emp = new Employee_check(20,10,15);
         Employee_check reliance_emp = new Employee_check(20, 12, 16);
+
 	Employee_check apple_emp = new Employee_check(15,16,17);
 	Employee_check tesla_emp = new Employee_check(10,30,40):
         // Calling the attendance method on first_emp
@@ -20,6 +21,7 @@ public class employee_wage_OOP {
 	//Calling the attendance method on tesla employee
         System.out.println("TESLA EMPLOEE:");
         tesla_emp.attendance();
+
     }
 
 
